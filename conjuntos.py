@@ -1,7 +1,7 @@
 # Conjuntos/Sets en Python
 
 # no tiene un par key-value, así me doy cuenta que es un set, un conjunto
-set_countries = {'mex', 'col', 'per'} 
+set_countries = {'mex', 'col', 'per'}
 print(type(set_countries))
 
 set_types = {1, 'hola', False, 12.4} # Un conjunto puede tener diferentes tipos
