@@ -13,7 +13,7 @@ print(result) # Ahora nosotros decidimos si imprimirla o no
 # ****** Multiples Returns y Args *******
 
 def volume(length = 1, width = 2, depth = 3): # Podemos asignar valores por defecto en caso de no enviarlos
-    return length * width * depth, width, 'Hola' # Ahora estamos retornando multiples valores (TUPLA)
+    return length * width * depth, width, 'Hola' # Ahora estamos retornando multiples valores (como TUPLA)
 
 result = volume(10, 20, 3)
 print(result)
