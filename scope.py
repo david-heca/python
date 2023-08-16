@@ -1,3 +1,5 @@
+# Scope en Python
+
 price = 100 # scope global o alcance global dentro del archivo
 
 def increment():
