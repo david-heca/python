@@ -1,7 +1,7 @@
-# Modificando conjuntos
+# Modificando conjuntos en Python
 
 set_countries = {'mex', 'col', 'per'}
-size = len(set_countries) # Devuelve el no. de elementos del conjunto (tamaño)
+size = len(set_countries) # Devuelve el no. de elementos del conjunto
 print(size)
 
 print('mex' in set_countries) # Evaluamos si esta mex en el conjunto
@@ -18,9 +18,7 @@ print(set_countries)
 set_countries.remove('col') # Eliminar algún elemento
 print(set_countries)
 
-set_countries.discard('col') # Cómo manejar un elemento que no existe?: Lo descartamos (No da error)
-print(set_countries)
+set_countries.discard('col') # Si no existe el elemento, no hace nada
 
-# Limpia todo el conjunto => Vacío
-set_countries.clear()
+set_countries.clear() # Limpia todo el conjunto => Vacío
 print(set_countries)

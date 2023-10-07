@@ -15,13 +15,13 @@ print('Intersection:', set_c)
 
 print('Intersection:', set_a & set_b) 
 
-# Difference: Remueve los elementos del segundo conjunto (incluyendo los comúnes)
+# Difference: Remueve los elementos de B (incluyendo los comúnes)
 set_c = set_a.difference(set_b)
 print('Difference:', set_c)
 
 print('Difference:', set_a - set_b)
 
-# Symmetric Difference: Muestra lso elementos de ambos conjuntos (excluyendo los comúnes)
+# Symmetric Difference: No muesta los elementos comúnes
 set_c = set_a.symmetric_difference(set_b)
 print('Sym. Difference:', set_c)
 
