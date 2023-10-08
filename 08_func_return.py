@@ -2,13 +2,12 @@
 
 def sumaRango(min, max):
     sum = 0
-    for x in range(min, max):
-        sum += x
+    for i in range(min, max):
+        sum += i
+    return(sum) # Retornamos el valor de la suma
 
-    return(sum) # Nos devuelve ahora un valor en lugar de imprimirlo directamente
-
-result = sumaRango(1, 11)
-print(result) # Ahora nosotros decidimos si imprimirla o no
+result = sumaRango(1, 10)
+print(result)
 
 # ****** Multiples Returns y Args *******
 
@@ -21,4 +20,4 @@ print(result)
 result = volume(width = 10) # Solo enviamos un valor
 print(result)
 
-print(result[0]) # También podemos pedir solo un return
+print(result[0]) # Como tupla podemos aplicar indexing para obtener el valor que queremos

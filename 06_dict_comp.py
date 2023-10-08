@@ -1,4 +1,5 @@
 # Dictionary Comprehension en Python
+import random
 
 dict = {}
 for i in range(1, 5):
@@ -6,11 +7,10 @@ for i in range(1, 5):
 
 print(dict)
 
-dict2 = {i : i * 2 for i in range(1, 5)} # Con Dict. Comprehension
+dict2 = {i : i * 2 for i in range(1, 5)} # Con Dict. Comprehension (key : value)
 print(dict2)
 
-import random
-countries = ['col', 'mex', 'bol'] # Asignamos población a cada país
+countries = ['col', 'mex', 'bol'] # Lista de países
 population = {}
 for country in countries:
     population[country] = random.randint(1, 100) # Aleatorio
@@ -29,16 +29,10 @@ print(list(zip(names, ages))) # zip: une las listas
 new_dict = {name: age for (name, age) in zip(names, ages)}
 print(new_dict)
 
-# ****** Condicionales ******
+print("****** Condicionales ******")
 
-result = {country : population for (country, population) in population2.items() if population > 20} # Si la población es mayor a 20
+result = {country : population for (country, population) in population2.items() if population > 50} # Si la población es mayor a 20
 print(result)
-
-result2 = {}
-for (country, population) in population2.items():
-    result2[country] = population
-
-print(result2)
 
 text = 'Hola, soy david'
 unique = {c : text.count(c) for c in text if c in 'aeiou'} # Obtenemos la vocal y la guardamos el numero de veces que hay en el texto
