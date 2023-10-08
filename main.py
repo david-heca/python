@@ -1,1 +1,0 @@
-import this # Importamos el Zen de Python
