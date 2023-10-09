@@ -1,10 +1,10 @@
 # Funciones Lambda en Python
 
-def increment(x):
+def increment(x): # Función que incrementa un valor en 1
     return x + 1 
 
 result = increment(10)
-print(result)
+print(result) # 11
 
 increment2 = lambda x : x + 1 # La misma función pero en lambda (entrada : salida)
 

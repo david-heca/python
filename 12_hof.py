@@ -1,4 +1,4 @@
-# Funciones dentro de otras funciones
+# Higher Order Functions (HOF) en Python
 
 def increment(x):
     return x + 1
@@ -12,7 +12,7 @@ print(result)
 
 # También se puede hacer con las funciones lambda
 
-increment2 = lambda x : x + 1
+increment2 = lambda x : x + 1 # (entrada : salida)
 
 hofunct2 = lambda x, func : x + func(x)
 
