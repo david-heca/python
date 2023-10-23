@@ -7,8 +7,7 @@ def hofunct(x, func): # Hacemos uso de una funcion como parámetro
     return x + func(x)
 
 result = hofunct(2, increment) # Pasamos la funcion como argumento
-# 2 + (2 + 1) = 5
-print(result)
+print(result) # 2 + (2 + 1) = 5
 
 # También se puede hacer con las funciones lambda
 

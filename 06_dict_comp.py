@@ -31,7 +31,7 @@ print(new_dict)
 
 print("****** Condicionales ******")
 
-result = {country : population for (country, population) in population2.items() if population > 50} # Si la población es mayor a 20
+result = {country : population for (country, population) in population2.items() if population > 50} # Si la población es mayor a 50
 print(result)
 
 text = 'Hola, soy david'
