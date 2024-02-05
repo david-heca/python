@@ -1,7 +1,7 @@
 # Funciones Lambda en Python
 
 def increment(x): # Función que incrementa un valor en 1
-    return x + 1 
+    return x + 1
 
 result = increment(10)
 print(result) # 11
