@@ -17,4 +17,4 @@ numbers = [1,2,3,1,2,3,4]
 set_numbers= set(numbers) # Cremos un conjunto a partir de una lista
 
 unique_numbers = list(set_numbers) # Podemos convertir un conjunto a una lista
-print(unique_numbers) 
+print(unique_numbers)
