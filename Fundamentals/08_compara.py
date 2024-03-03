@@ -1,7 +1,8 @@
-# Operadores de comparación
+# Operadores de comparación en Python
 
+# Los operadores devuelven True o False
 # > Mayor que
-print(7 > 3) # Los operadores devuelven True o False
+print(7 > 3)
 
 # < Menor que
 print(8 < 10)
@@ -15,7 +16,7 @@ print(3 <= 10)
 # == Igualdad
 print(2 == 4)
 
-# != Desigualdad o diferente
+# != Desigualdad o diferente de
 print(9 != 10)
 
 print("Apple" == "apple") # También se puede hacer con cadenas de texto

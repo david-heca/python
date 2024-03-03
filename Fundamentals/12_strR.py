@@ -6,15 +6,13 @@ print('Python' in text) # Devuelve True o False
 
 if 'Python' in text:
   print('Que buena lectura')
-
 else:
   print('Deberías aprender Pyhton')
 
-# METODOS DE STRINGS
+# Métodos de strings
 
 size = len(text) # Metodo que examina el tamaño de caracteres (contando espacios)
 print(size)
-
 print(text.upper()) # Convierte el texto a mayusculas
 print(text.lower()) # Minusculas
 print(text.count('a')) # Cuantas veces hay una 'a'

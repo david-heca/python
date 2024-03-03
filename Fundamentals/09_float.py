@@ -1,8 +1,8 @@
-# Comparación de números flotantes
+# Comparación de números flotantes en Python
 
 x = 3.3
 y = 1.1 + 2.2
-print (x == y) # Da False por la presición de cada variable
+print(x == y) # Da False por la presición de cada variable
 
 yStr = format(y, ".2g") # Aquí estamos cortando la presición con format
 print("Str: " + yStr)

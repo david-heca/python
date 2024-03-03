@@ -27,7 +27,7 @@ print(nueva)
 print(nueva.pop(0)) # También puedes elegir una posición
 
 nueva.reverse() # Muestra la lista al reves
-print(nueva) 
+print(nueva)
 
 numbers.sort() # Ordena la lista del menor al mayor (también en Stings)
 print(numbers) # No ordena datos mezclados

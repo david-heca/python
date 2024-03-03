@@ -1,6 +1,6 @@
-# Operadores logicos
+# Operadores logicos en Python
 
-# AND, las dos tienen que dar verdadero
+# AND, las dos tienen que dar True
 print('True and True =>', True and True) # True
 print('True and False =>', True and False) # False
 print('False and True =>', False and True) # False
@@ -15,7 +15,7 @@ stock = int(input('Ingrese el numero de stock: \n'))
 # Establece limites de minimo y maximo
 print(stock >= 100 and stock <= 1000)
 
-# OR, solo con uno sea verdadero
+# OR, solo uno tiene que dar True
 print('True or True =>', True or True) # True
 print('True or False =>', True or False) # True
 print('False or True =>', False or True) # True
@@ -28,11 +28,11 @@ print(role == 'admin' or role == 'seller') # admin o vendedor, solo en ese caso 
 print(not True)
 print(not False)
 
-print('True and True =>', not (True and True)) # False
-print('True and False =>', not (True and False)) # True
-print('False and True =>', not (False and True)) # True
-print('False and False =>', not (False and False)) # True
+print('not True and True =>', not (True and True)) # False
+print('not True and False =>', not (True and False)) # True
+print('not False and True =>', not (False and True)) # True
+print('not False and False =>', not (False and False)) # True
 
 # Negación del ejercicio and, todo el rango de 100 y 1000 da False
 stock = int(input('Ingrese el numero de stock: \n'))
-print(not(stock >= 100 and stock <= 1000))
+print(not(stock >= 100 and stock <= 1000)) # Tiene que estar fuera del rango (100 y 1000) para dar True

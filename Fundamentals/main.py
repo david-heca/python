@@ -12,19 +12,19 @@ while True:
   print('Ronda:', ronda)
   print('Victorias del usuario:', userWins)
   print('Victorias de la computadora:', compWins)
-  
+
   userOp = input("¿Piedra, papel o tijera? ").lower()
   compOp = random.choice(opciones) # Escoge algo basado en una tupla/lista
-  
+
   if userOp not in opciones: # Si no eliges una opción valida
     print('No es una opción valida')
     continue
 
   print('Opción de la computadora: ', compOp)
-  
+
   if userOp == compOp:
     print("Es un empate")
-  
+
   elif userOp == "piedra":
     if compOp == "tijera":
       print("Ganaste")
@@ -32,7 +32,7 @@ while True:
     else:
       print("Perdiste")
       compWins += 1
-      
+
   elif userOp == "papel":
     if compOp == "tijera":
       print("Perdiste")
@@ -40,7 +40,7 @@ while True:
     else:
       print("Ganaste")
       userWins += 1
-      
+
   elif userOp == "tijera":
     if compOp == "piedra":
       print("Perdiste")
@@ -48,14 +48,14 @@ while True:
     else:
       print("Ganaste")
       userWins += 1
-      
+
   if compWins == 2:
     print("Computadora gana!!!")
     break
-    
+
   elif userWins == 2:
     print("Usuario gana!!!")
     break
 
-  else: 
+  else:
     ronda += 1

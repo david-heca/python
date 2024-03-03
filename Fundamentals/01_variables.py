@@ -1,13 +1,13 @@
-# Variables
+# Variables en Python
 
-nombre = "David" # Esta es una variable
-print(nombre) # Imprimir una variable
+nombre = "David"
+print(nombre)
 
-edad = 22 # Variable de un número
+edad = 22
 print(edad)
 
 nombre = "Aaron" # Las variables se puedne sobreescribir
-print("Mi nombre es: " + nombre) # Concatenación
+print("Mi nombre es: " + nombre) # Concatenación de una variable
 
 # Input
 

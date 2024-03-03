@@ -1,4 +1,4 @@
-# Numbers en Python
+# Números en Python
 
 vidas = 3 # Así se declara un numero como variable
 print(type(vidas))

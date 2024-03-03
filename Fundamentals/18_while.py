@@ -13,7 +13,7 @@ while contador < 10:
 
 contador = 0
 while contador < 20:
-  contador +=1
+  contador += 1
   if contador == 15:
     break # Forma forzada de romper el ciclo
   print(contador)

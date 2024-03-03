@@ -1,5 +1,6 @@
 # Diccionarios en Python
 
+# Los diccionarios son una estructura de datos que nos permite almacenar valores de diferentes tipos, como enteros, cadenas y listas. Los diccionarios son una colección de pares de valores clave-valor, donde cada clave es única. Los diccionarios son mutables, lo que significa que pueden ser modificados después de su creación.
 dicc = {
   'nombre': 'david',
   'apellido': 'herrera',
@@ -8,13 +9,11 @@ dicc = {
 
 print(type(dicc)) # Verificamos el tipo
 print(len(dicc)) # Conocer el numero de elementos
-print(dicc) 
+print(dicc)
 print(dicc['edad']) # Podemos obtener un valor de la key
 
 # Una manera de trabajar sin dejar de compilar en caso de error, obtenemos un valor o no
-print(dicc.get('edad2')) 
-
-print('edad' in dicc) # Verificamos que esta en el dicc
+print(dicc.get('edad2')) # Si no existe la key, devuelve None
 
 # Inserción y actualización
 dicc2 = {
