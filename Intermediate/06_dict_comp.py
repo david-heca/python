@@ -26,7 +26,7 @@ ages = [19, 23, 25]
 print(list(zip(names, ages))) # zip: une las listas
 
 # par clave-valor que viene del iterable de una lista con tuplas
-new_dict = {name: age for (name, age) in zip(names, ages)}
+new_dict = {name : age for (name, age) in zip(names, ages)}
 print(new_dict)
 
 print("****** Condicionales ******")

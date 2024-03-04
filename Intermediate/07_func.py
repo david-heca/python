@@ -1,6 +1,6 @@
 # Funciones en Python
 
-print('Hola') # Print es una función como tal
+print('Hola') # Print es una función
 
 def my_print(text): # Creamos una funcion que recibe un parámetro
     print(text * 2)

@@ -18,7 +18,7 @@ def elegirOpciones():
     return userOp, compOp
 
 def reglas(userOp, compOp, userWins, compWins):
-    
+
     if userOp == compOp:
         print("Es un empate")
 
@@ -75,7 +75,7 @@ def runGame():
 
         if userOp != None:
             userWins, compWins = reglas(userOp, compOp, userWins, compWins)
-            
+
             userWins, compWins, ronda =  resultado(userWins, compWins, ronda)
             if userWins == 2 or compWins == 2:
                 break

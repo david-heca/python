@@ -1,5 +1,6 @@
 # Higher Order Functions (HOF) en Python
 
+# Las HOF son funciones que toman una o más funciones como argumentos y/o devuelven una función como resultado.
 def increment(x):
     return x + 1
 

@@ -1,10 +1,10 @@
 # List Comprehension en Python
 
-numbers = [] 
+numbers = []
 for element in range(1, 11): # Agrega elementos a una lista (rango del 1 al 11)
     numbers.append(element + 1)
-    
-print(numbers) 
+
+print(numbers)
 
 numbers2 = [element + 1 for element in range(1, 11)] # Haz una lista más fácil con List Comp.
 print(numbers2)

@@ -6,7 +6,7 @@ print(size)
 
 print('mex' in set_countries) # Evaluamos si esta mex en el conjunto
 
-# add
+# insert
 set_countries.add('bol') # Podemos agregar un elemento
 print(set_countries)
 
