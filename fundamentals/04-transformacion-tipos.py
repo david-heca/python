@@ -14,6 +14,6 @@ edad = 22
 # print("Mi edad es: " + str(edad)) # cambiar de int -> str
 print(f"Mi edad es: {edad}") # alternativa
 
-# conversion explícita de tipos de datos
+# conversion explícita de tipos de datos (casting)
 edad = int(input("Ingresa tu edad: \n"))
 print(type(edad))

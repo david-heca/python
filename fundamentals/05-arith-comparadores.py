@@ -1,18 +1,19 @@
 # Operadores aritmeticos en Python
+# PEMDAS: Parentesis, Exponentes, Multiplicación, División, Adición, Sustracción
 
 print(10 + 10)
 print(10 - 10)
 print(10 * 10)
 print(10 / 10)
-print(3 ** 2) # Potenciación
-print(10 % 3) # Modulo: Da el residuo de una división
-print(10 // 3) # División entera: da el numero entero de una división
+print(3 ** 2) # potenciación
+print(10 % 3) # modulo o residuo de una división
+print(10 // 3) # división entera
 
-# Nota: El modulo ayuda a saber si un programa es par o impar
+# Nota: el modulo puede ayudar a saber si un número es par o impar
 
 # Operadores de comparación en Python
+# Estos operadores devuelven como resultado un valor booleano (True o False)
 
-# Los operadores devuelven True o False
 # > Mayor que
 print(7 > 3)
 
@@ -28,8 +29,8 @@ print(3 <= 10)
 # == Igualdad
 print(2 == 4)
 
-# != Desigualdad o diferente de
+# != Desigualdad o diferente
 print(9 != 10)
 
-print("Apple" == "apple") # También se puede hacer con cadenas de texto
-print(1 == "1")
+print("Apple" == "apple") # False
+print(1 == "1") # False
