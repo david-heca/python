@@ -9,5 +9,5 @@ numbers = range(11)
 square = list(map(lambda x: x ** 2, numbers)) # map() aplica una función a cada elemento de una lista
 print(square)
 
-even_numbers = list(filter(lambda x: x % 2 == 0, numbers)) # filter() filtra los elementos de una lista que cumplan con una condición
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers)) # filter() filtra los elementos de una lista que cumplan con una condición, en este caso sucede para los números pares
 print(even_numbers)
