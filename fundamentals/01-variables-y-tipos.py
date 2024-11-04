@@ -1,7 +1,6 @@
 # Variables en Python
 
-# Python es un lenguaje ordenado y limpio, va de arriva hacía abajo y de izquierda a derecha
-# Las variables son contenedores de información
+# Python es un lenguaje ordenado y limpio, va de arriba hacía abajo y de izquierda a derecha
 
 nombre = "David"
 print(type(nombre)) # str
@@ -12,10 +11,10 @@ print(type(edad)) # int
 soltero = True
 print(type(soltero)) # bool
 
-nombre = "Aaron" # sobreescritura de una variable
+nombre = "Aaron" # sobreescritura
 print("Mi nombre es: " + nombre) # concatenación
 
 # Input o entrada de datos
 
 nombre = input("¿Cuál es tu nombre? \n")
-print("Tu nombre es:", nombre, "y su tipo de dato es:", type(nombre)) # la coma agrega un espacio
+print("Tu nombre es:", nombre) # la coma agrega un espacio

@@ -54,7 +54,7 @@ class Library:
         print("Libros disponibles:")
         for book in self.books:
             if book.available:
-                print(f"{book.title} por {book. author}")
+                print(f"{book.title} por {book.author}")
 
 #Crear los libros
 book1 = Book("El principito", "Antoine de Saint-Exupéry")
@@ -75,11 +75,15 @@ library.show_available_books()
 #Realizar prestamo
 user1.borrow_book(book1)
 
+user1.borrow_book(book1)
+
 #Mostrar libros
 library.show_available_books()
 
 #Devolver libro
 user1.return_book(book1)
+
+user1.return_book(book2)
 
 #Mostrar libros
 library.show_available_books()
