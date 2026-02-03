@@ -1,9 +1,12 @@
 # Listas/Arrays en Python
+# Son una colección ordenada e mutable de elementos
 
-to_do = ['Ir al hotel',
-         'Ir a almorzar',
-         'Visitar un museo',
-         'Regresar al hotel'] # las listas permiten almacenar varios valores
+to_do = [
+    'Ir al hotel',
+    'Ir a almorzar',
+    'Visitar un museo',
+    'Regresar al hotel'
+] # las listas permiten almacenar varios valores
 print(to_do)
 
 numbers = [1,2,3,4,5]

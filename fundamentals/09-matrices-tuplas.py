@@ -1,4 +1,5 @@
 # Matriz en Python
+# Una matriz es una colección bidimensional de elementos, similar a una lista de listas
 
 matriz = [ # Se declara una matriz
   [1,2,3],
@@ -10,7 +11,7 @@ print(matriz[0]) # Imprimimos la primera fila
 print(matriz[0][1]) # Imprimimos el segundo elemento de la primera fila
 
 # Tuplas en Python
-# Son tipos de datos inmutables, es decir, no se pueden modificar, eliminar o agregar elementos
+# Son una colección ordenada e inmutable de elementos
 
 numbers = (1,2,3,4,5) # Se declara con parentesís
 print(type(numbers))
@@ -27,4 +28,4 @@ print(nombres.index('david')) # Si podemos consultar
 nueva = list(nombres)
 print(type(nueva))
 
-# NOTA: También se pude transformar una lista a una tupla
+# Nota: También se pude transformar una lista a una tupla

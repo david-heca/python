@@ -11,7 +11,7 @@ print(type(edad)) # int
 soltero = True
 print(type(soltero)) # bool
 
-nombre = "Aaron" # sobreescritura
+nombre = "Aaron" # sobreescritura de variables
 print("Mi nombre es: " + nombre) # concatenación
 
 # Input o entrada de datos

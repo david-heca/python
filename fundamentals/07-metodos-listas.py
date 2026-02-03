@@ -13,17 +13,17 @@ numbers.insert(4, 900) # insert recibe la posición y el elemento nuevo para ins
 print(numbers)
 
 tareas = ['todo1','todo2','todo3']
-nueva = tareas + numbers # unir/concatenar listas
+nueva = tareas + numbers # concatenar listas
 print(nueva)
 
-print(nueva.index('todo2')) # nos devuelve la posición de un elemento en la lista
+print(nueva.index('todo2')) # nos devuelve la posición de un elemento
 
 # Delete
 
 nueva.remove('todo3') # remueve un elemento en especifico
 print(nueva)
 
-# print(nueva.pop()) # elimina el ultimo elemento de una lista y lo devuelve
+# print(nueva.pop()) # elimina el ultimo elemento de una lista
 print(nueva.pop(0)) # elimina un elemento en especifico
 
 nueva.reverse() # Muestra la lista al reves
@@ -35,7 +35,7 @@ print(numbers)
 # Slice en Python
 
 a = [1,2,3,4,5]
-b = a #b apuntara al mismo espacio de memoria que a
+b = a #b apuntara al mismo espacio de memoria que a, por lo que si se modifica a, b también cambiará
 print(a)
 print(b)
 

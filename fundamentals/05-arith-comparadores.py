@@ -1,13 +1,13 @@
 # Operadores aritmeticos en Python
-# PEMDAS: Parentesis, Exponentes, Multiplicación, División, Adición, Sustracción
+# PEMDAS: Parentesis, Exponenciales, Multiplicación/División, Adición/Sustracción
 
 print(10 + 10)
 print(10 - 10)
 print(10 * 10)
 print(10 / 10)
 print(3 ** 2) # potenciación
-print(10 % 3) # modulo o residuo de una división
-print(10 // 3) # división entera
+print(10 % 3) # modulo: es el residuo de una división
+print(10 // 3) # división entera: devuelve la parte entera de la división
 
 # Nota: el modulo puede ayudar a saber si un número es par o impar
 

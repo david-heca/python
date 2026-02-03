@@ -7,10 +7,11 @@ nombre = 12 # int
 nombre = False # bool
 
 # la concatenación unicamente se puede hacer con los mismos tipos de datos
-print("David" + " Herrera") # David Herrera
-print(10 + 20) # 30
+print("David" + " Herrera")
+print(10 + 20)
 
 edad = 22
+
 # print("Mi edad es: " + str(edad)) # cambiar de int -> str
 print(f"Mi edad es: {edad}") # alternativa
 

@@ -3,6 +3,8 @@
 vidas = 3
 print(type(vidas)) # int
 
+# Floats en Python
+
 temperatura = 12.2
 print(type(temperatura)) # float
 
