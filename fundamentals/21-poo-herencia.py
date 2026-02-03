@@ -4,13 +4,15 @@ class Vehicle:
         self.model = model
         self.price = price
         self.available = True
-        
+
     def sell(self):
         if not self.is_available:
             self.is_available = True
             print("Vehículo venidido correctamente")
         else:
-            print (f"El vehículo {self.brand} - {self.model} se encuentra de nuevo disponible")
+            print(
+                f"El vehículo {self.brand} - {self.model} se encuentra de nuevo disponible"
+            )
 
     def buy(self) -> bool:
         if self.is_available:
@@ -18,20 +20,21 @@ class Vehicle:
             print("Vehículo comprado correctamente")
             return True
         else:
-            print (f"El vehículo {self.brand} - {self.model} no se encuentra disponible")
+            print(f"El vehículo {self.brand} - {self.model} no se encuentra disponible")
             return False
 
     def check_availability(self):
         return self.is_available
-    
+
     def get_price(self):
         return self.price
-    
+
     def start_engine(self):
         raise NotImplementedError("Este metodo debe ser implementado por la subclase")
-    
+
     def stop_engine(self):
         raise NotImplementedError("Este metodo debe ser implementado por la subclase")
+
 
 class Car(Vehicle):
     def start_engine(self):
@@ -39,58 +42,63 @@ class Car(Vehicle):
             return f"El motor del vehículo {self.brand} - {self.model} está en marcha"
         else:
             return f"El vehículo {self.brand} - {self.model} no está disponible"
-    
+
     def stop_engine(self):
         if self.is_available:
             return f"El motor del vehículo {self.brand} - {self.model} se ha detenido"
         else:
             return f"El vehículo {self.brand} - {self.model} no está disponible"
-        
+
+
 class Bike(Vehicle):
     def start_engine(self):
         if self.is_available:
             return f"La bicicleta {self.brand} - {self.model} está en marcha"
         else:
             return f"La bicicleta {self.brand} - {self.model} no está disponible"
-    
+
     def stop_engine(self):
         if self.is_available:
             return f"La bicicleta {self.brand} - {self.model} se ha detenido"
         else:
             return f"La bicicleta {self.brand} - {self.model} no está disponible"
-        
+
+
 class Truck(Vehicle):
     def start_engine(self):
         if self.is_available:
             return f"El motor del camión {self.brand} - {self.model} está en marcha"
         else:
             return f"El camión {self.brand} - {self.model} no está disponible"
-    
+
     def stop_engine(self):
         if self.is_available:
             return f"El motor del camión {self.brand} - {self.model} se ha detenido"
         else:
             return f"El camión {self.brand} - {self.model} no está disponible"
 
+
 class Customer:
     def __init__(self, name):
         self.name = name
         self.purchased_vehicles = []
-        
+
     def buy_vehicle(self, vehicle: Vehicle):
         if vehicle.check_availability():
             vehicle.buy()
             self.purchased_vehicles.append(vehicle)
         else:
             print(f"El vehículo {self.brand} - {self.model} no está disponible")
-            
+
     def inquire_vehicle(self, vehicle: Vehicle):
         if vehicle.check_availability():
             availability = "disponible"
         else:
             availability = "no disponible"
-        print(f"El vehículo {self.brand} - {self.model} se encuentra {availability} y cuesta {vehicle.price}")
-        
+        print(
+            f"El vehículo {self.brand} - {self.model} se encuentra {availability} y cuesta {vehicle.price}"
+        )
+
     class Dealership:
         def __init__(self):
             self.vehicles = []
@@ -108,4 +116,6 @@ class Customer:
             print("Vehículos disponibles:")
             for vehicle in self.vehicles:
                 if vehicle.is_available:
-                    print(f"{vehicle.brand} - {vehicle.model} por {vehicle.get_price()}")
+                    print(
+                        f"{vehicle.brand} - {vehicle.model} por {vehicle.get_price()}"
+                    )

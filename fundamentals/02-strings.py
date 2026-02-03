@@ -22,8 +22,10 @@ print(nombre[-0]) # indexación inversa
 
 print(nombre[0:3]) # slicing: primeros 3 caracteres
 
-print (len(nombre)) # longitud
+print(len(nombre)) # longitud
 
 print(nombre * 5) # repetición
 
 print("La ruta de archivo es: C:\\Users\\Usuario\\Desktop\\archivo.txt") # escape de caracteres
+
+print(r"La ruta de archivo es: C:\Users\Usuario\Desktop\archivo.txt") # raw string

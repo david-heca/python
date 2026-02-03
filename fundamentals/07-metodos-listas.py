@@ -6,6 +6,10 @@ print(numbers[2]) # Read
 numbers[-1] = 10 # Update
 print(numbers)
 
+quote = "No dejes para mañana lo que puedes hacer hoy"
+words = quote.split() # convierte un string en una lista
+print(words)
+
 numbers.append(700) # agregar un nuevo elemento al final de la lista
 print(numbers)
 

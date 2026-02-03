@@ -11,6 +11,9 @@ print(type(edad)) # int
 soltero = True
 print(type(soltero)) # bool
 
+none = None
+print(type(none)) # NoneType es un tipo especial que representa la ausencia de valor
+
 nombre = "Aaron" # sobreescritura de variables
 print("Mi nombre es: " + nombre) # concatenación
 
