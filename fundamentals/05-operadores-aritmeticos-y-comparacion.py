@@ -29,6 +29,21 @@ print(3 <= 10)
 # == Igualdad
 print(2 == 4)
 
+a = 5
+
+a += 3 # a = a + 3
+print(a)
+a -= 2 # a = a - 2
+print(a)
+a *= 2 # a = a * 2
+print(a)
+a /= 2 # a = a / 2
+print(a)
+
+# Walrus operator (operador morsa) disponible a partir de Python 3.8
+# Permite asignar un valor a una variable dentro de una expresión
+print(b := 10) # Asigna 10 a b y luego imprime el valor de b
+
 # != Desigualdad o diferente
 print(9 != 10)
 
