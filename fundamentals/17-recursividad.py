@@ -1,13 +1,16 @@
 # Recursividad en Python
 # Recursividad es una técnica en programación donde una función se llama a sí misma para resolver un problema.
 
+
 def factorial(n):
     if n == 0:
         return 1
     else:
         return n * factorial(n - 1)
 
+
 print(factorial(5))
+
 
 def fibonacci(n):
     if n == 0:
@@ -17,7 +20,9 @@ def fibonacci(n):
     else:
         return fibonacci(n - 1) + fibonacci(n - 2)
 
+
 print(fibonacci(5))
+
 
 def suma_digitos(n):
     # Caso base: si n es menor que 10, significa que tiene un solo dígito

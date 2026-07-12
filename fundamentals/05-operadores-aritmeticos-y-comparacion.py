@@ -5,9 +5,9 @@ print(10 + 10)
 print(10 - 10)
 print(10 * 10)
 print(10 / 10)
-print(3 ** 2) # potenciación
-print(10 % 3) # modulo: es el residuo de una división
-print(10 // 3) # división entera: devuelve la parte entera de la división
+print(3**2)  # potenciación
+print(10 % 3)  # modulo: es el residuo de una división
+print(10 // 3)  # división entera: devuelve la parte entera de la división
 
 # Nota: el modulo puede ayudar a saber si un número es par o impar
 
@@ -31,21 +31,21 @@ print(2 == 4)
 
 a = 5
 
-a += 3 # a = a + 3
+a += 3  # a = a + 3
 print(a)
-a -= 2 # a = a - 2
+a -= 2  # a = a - 2
 print(a)
-a *= 2 # a = a * 2
+a *= 2  # a = a * 2
 print(a)
-a /= 2 # a = a / 2
+a /= 2  # a = a / 2
 print(a)
 
 # Walrus operator (operador morsa) disponible a partir de Python 3.8
 # Permite asignar un valor a una variable dentro de una expresión
-print(b := 10) # Asigna 10 a b y luego imprime el valor de b
+print(b := 10)  # Asigna 10 a b y luego imprime el valor de b
 
 # != Desigualdad o diferente
 print(9 != 10)
 
-print("Apple" == "apple") # False
-print(1 == "1") # False
+print("Apple" == "apple")  # False
+print(1 == "1")  # False

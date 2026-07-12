@@ -1,20 +1,20 @@
 # Números en Python
 
 vidas = 3
-print(type(vidas)) # int
+print(type(vidas))  # int
 
 # Floats en Python
 
 temperatura = 12.2
-print(type(temperatura)) # float
+print(type(temperatura))  # float
 
-temperatura = 4e2 # notación científica
+temperatura = 4e2  # notación científica
 print(temperatura)
 
 valor = 3.14159
-print("Valor: {:.2f}".format(valor)) # redondeo a 2 decimales
+print("Valor: {:.2f}".format(valor))  # redondeo a 2 decimales
 
-vidas = vidas - 1 # reutilizamos valor
+vidas = vidas - 1  # reutilizamos valor
 print(vidas)
 
 # Calculadora de presupuesto promedio
@@ -28,7 +28,7 @@ print(f"Tu promedio es de: {promedio} por mes")
 # Booleans en Python
 
 soltero = True
-print(type(soltero)) # bool
+print(type(soltero))  # bool
 print(soltero)
 
-print(not soltero) # not: invierte el estado de la variable
+print(not soltero)  # not: invierte el estado de la variable

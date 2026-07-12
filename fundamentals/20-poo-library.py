@@ -1,5 +1,6 @@
 # Ejercicio de librería en Python
 
+
 class Book:
     def __init__(self, title, author):
         self.title = title
@@ -16,6 +17,7 @@ class Book:
     def return_book(self):
         self.available = True
         print(f"El libro {self.title} ha sido devuelto")
+
 
 class User:
     def __init__(self, name, user_id):
@@ -37,6 +39,7 @@ class User:
         else:
             print(f"El libro {book.title} No esta en la lista de prestados")
 
+
 class Library:
     def __init__(self):
         self.books = []
@@ -56,34 +59,35 @@ class Library:
             if book.available:
                 print(f"{book.title} por {book.author}")
 
-#Crear los libros
+
+# Crear los libros
 book1 = Book("El principito", "Antoine de Saint-Exupéry")
 book2 = Book("1984", "George Orwell")
 
-#Crear usuario
+# Crear usuario
 user1 = User("David Herrera", "001")
 
-#Crear Biblioteca
+# Crear Biblioteca
 library = Library()
 library.add_book(book1)
 library.add_book(book2)
 library.register_user(user1)
 
-#Mostrar libros
+# Mostrar libros
 library.show_available_books()
 
-#Realizar prestamo
+# Realizar prestamo
 user1.borrow_book(book1)
 
 user1.borrow_book(book1)
 
-#Mostrar libros
+# Mostrar libros
 library.show_available_books()
 
-#Devolver libro
+# Devolver libro
 user1.return_book(book1)
 
 user1.return_book(book2)
 
-#Mostrar libros
+# Mostrar libros
 library.show_available_books()

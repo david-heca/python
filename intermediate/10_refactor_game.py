@@ -2,20 +2,21 @@
 
 import random
 
-opciones = ('piedra', 'papel', 'tijera')
+opciones = ("piedra", "papel", "tijera")
 
 
 def elegirOpciones():
     userOp = input("¿Piedra, papel o tijera? ").lower()
-    compOp = random.choice(opciones) # Escoge una opción random
+    compOp = random.choice(opciones)  # Escoge una opción random
 
-    if userOp not in opciones: # Si no eliges una opción valida
-        print('No es una opción valida')
+    if userOp not in opciones:  # Si no eliges una opción valida
+        print("No es una opción valida")
         return None, None
 
-    print('Opción de la computadora: ', compOp)
+    print("Opción de la computadora: ", compOp)
 
     return userOp, compOp
+
 
 def reglas(userOp, compOp, userWins, compWins):
 
@@ -48,6 +49,7 @@ def reglas(userOp, compOp, userWins, compWins):
 
     return userWins, compWins
 
+
 def resultado(userWins, compWins, ronda):
     if compWins == 2:
         print("Computadora gana!!!")
@@ -60,24 +62,26 @@ def resultado(userWins, compWins, ronda):
 
     return userWins, compWins, ronda
 
+
 def runGame():
     userWins = 0
     compWins = 0
     ronda = 1
 
     while True:
-        print('****' * 10)
-        print('Ronda:', ronda)
-        print('Victorias del usuario:', userWins)
-        print('Victorias de la computadora:', compWins)
+        print("****" * 10)
+        print("Ronda:", ronda)
+        print("Victorias del usuario:", userWins)
+        print("Victorias de la computadora:", compWins)
 
         userOp, compOp = elegirOpciones()
 
         if userOp != None:
             userWins, compWins = reglas(userOp, compOp, userWins, compWins)
 
-            userWins, compWins, ronda =  resultado(userWins, compWins, ronda)
+            userWins, compWins, ronda = resultado(userWins, compWins, ronda)
             if userWins == 2 or compWins == 2:
                 break
+
 
 runGame()

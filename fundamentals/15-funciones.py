@@ -5,19 +5,24 @@
 
 # greet("David", "Herrera")  # "David" es el argumento
 
+
 def add(a, b):
     return a + b
+
 
 def substract(a, b):
     return a - b
 
+
 def multiply(a, b):
     return a * b
+
 
 def divide(a, b):
     if b == 0:
         return "No se puede dividir por cero"
     return a / b
+
 
 def calculator():
     while True:
@@ -46,5 +51,6 @@ def calculator():
                 print("Resultado:", divide(a, b))
         else:
             print("Opción no válida")
+
 
 calculator()

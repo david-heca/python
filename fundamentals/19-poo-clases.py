@@ -1,6 +1,7 @@
 # Clases en Python
 
-class Person():
+
+class Person:
     # __init__ es el constructor de la clase y su funcion principal es inicializar los objetos de una clase cuando se crean
     def __init__(self, name, age):
         self.name = name
@@ -10,10 +11,12 @@ class Person():
     def greet(self):
         print(f"Hola, mi nombre es {self.name} y tengo {self.age} años")
 
+
 # person1 = Person("David", 24)
 # person1.greet()
 
-class BankAccount():
+
+class BankAccount:
     def __init__(self, account_holder, balance):
         self.account_holder = account_holder
         self.balance = balance
