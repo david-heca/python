@@ -32,3 +32,5 @@ print(type(soltero))  # bool
 print(soltero)
 
 print(not soltero)  # not: invierte el estado de la variable
+
+print(isinstance(vidas, int))  # isinstance: verifica si la variable es del tipo indicado

@@ -1,6 +1,6 @@
 # Operadores logicos en Python
 
-# AND, las dos tienen que dar True
+# AND, las dos tienen que ser verdaderas
 print("True and True =>", True and True)  # True
 print("True and False =>", True and False)  # False
 print("False and True =>", False and True)  # False
@@ -10,7 +10,7 @@ print("False and False =>", False and False)  # False
 print(10 > 5 and 5 < 10)  # True
 print(10 > 5 and 5 > 10)  # False
 
-# OR, solo uno tiene que dar True
+# OR, solo uno tiene que ser verdadera
 print("True or True =>", True or True)  # True
 print("True or False =>", True or False)  # True
 print("False or True =>", False or True)  # True
