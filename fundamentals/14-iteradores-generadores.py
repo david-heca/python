@@ -1,8 +1,9 @@
 # Iteradores en Python
+# Los iteradores nos permiten acceder a los elementos de una colección uno por uno, sin necesidad de conocer la estructura interna de la colección.
 
 lista = [1, 2, 3]
 
-iterador = iter(lista)  # Creamos un iterador a partir de la lista
+iterador = iter(lista)  # Creamos un iterador
 
 print(next(iterador))  # next() nos permite obtener el siguiente elemento de la lista
 print(next(iterador))

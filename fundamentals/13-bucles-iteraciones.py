@@ -8,7 +8,7 @@ lista = [71, 2, 42, 13, 4]
 for i in lista:  # uno por uno
     print(i)
 
-tupla = ("David", "Julian", "Abraham")  # tambien se puede iterar tuplas
+tupla = ("David", "Julian", "Abraham")
 for i in tupla:
     print(i)
 
@@ -16,8 +16,8 @@ dicc = {"nombre": "david", "apellido": "herrera", "edad": 22}
 for i in dicc:  # itera naturalmente las keys
     print(i)
 
-for i in dicc:  # aqui los valores
-    print(dicc[i])
+for i in dicc:
+    print(dicc[i])  # imprime los valores de las keys
 
 for key, value in dicc.items():
     print(key, "=", value)
@@ -29,7 +29,7 @@ personas = [
 ]
 
 for persona in personas:
-    print(persona)  # Imprime cada persona dentro de la lista de diccionarios
+    print(persona)  # imprime cada diccionario de la lista
 
 # Ciclos: WHILE en Python
 # El ciclo while es un ciclo que se repite mientras una condición sea verdadera.
@@ -57,5 +57,5 @@ contador = 0
 while contador < 20:
     contador += 1
     if contador <= 15:
-        continue  # salta la logica posterior al continue y vuelve a iterar
+        continue  # si el contador es menor o igual a 15, se salta la iteración y no imprime nada pero sigue sumando hasta que llegue a 20
     print(contador)

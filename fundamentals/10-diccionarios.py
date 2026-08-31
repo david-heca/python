@@ -8,10 +8,10 @@ dicc = {
 }
 
 print(type(dicc))
-print(len(dicc))  # Conocer el numero de elementos
-print(dicc["edad"])  # Podemos obtener un valor de la key
+print(len(dicc))  # conocer el numero de elementos
+print(dicc["edad"])  # podemos obtener un valor de la key
 
-print(dicc.get("edad2"))  # Si no existe la key, devuelve None
+print(dicc.get("edad2"))  # si no existe la key, devuelve None
 
 # Inserción y actualización
 dicc2 = {
@@ -20,7 +20,7 @@ dicc2 = {
     "lenguajes": [
         "Pyhton",
         "JS",
-    ],  # Puede haber arreglos como atributos del diccionario
+    ],  # podemos almacenar listas dentro de un diccionario
     "edad": 22,
 }
 
@@ -29,7 +29,7 @@ dicc2["lenguajes"].append("Rust")  # podemos trabajar con la lista dentro del di
 print(dicc2)
 
 del dicc2["apellido"]  # eliminar un atributo
-dicc2.pop("edad")  # elimina con pop
+dicc2.pop("edad")  # eliminar con pop
 print(dicc2)
 
 print("********* items *********")  # devuelve cada elemento
